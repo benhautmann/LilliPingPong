@@ -1,0 +1,16 @@
+body {
+    margin: 10 auto;
+    max-width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(108, 172, 227);
+    font-weight: bold;
+    padding: 30px;
+    cursor: ew-resize;
+
+    /* macht alles langsam */
+    transition: all 2s;
+}
+
+summary {
+    cursor: crosshair;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>PingPong</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--_____________________________________________________________________ Favicon ist das kleine Bild das man im Browser-Tab sehen kann -->
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+    <link id="styleSheetId" rel="stylesheet" href="css/style.css">
+</head>
+<body id="bodyElement">
+
+
+    <!--_____________________________________________________________________ Beschreibung -->
+    <br>
+    <details>
+        <summary>Websiten Pingpong</summary>
+        <p>Auf dem Websiten Pingpong fügen Lilli und Ben abwechselnd Elemente der Website hinzu.</p>
+        <img src="bilder/Lilli_in2019.png" alt="Lilli 2019" width="30%">
+    </details>
+
+<br>
+
+
+<!--- input checkbox Schalter der einschaltet ob weirde JS Funktionen an sind oder nicht -->
+Start Weirdness
+<input id="checkboxId" type="checkbox">
+
+
+<!--_________________________________________________________________________ klick auf PING, PONG erscheint, klick auf PONG, PING erscheint -->
+<div style="text-align: center;">
+    <p id="ping" style="display:inline-block; cursor: pointer;" onclick="pingPong()"> 
+        PING
+    </p>
+    <p id="pong" style="display:inline-block; cursor: pointer; visibility: hidden;" onclick="pingPong()"> 
+        PONG
+    </p>
+</div>
+
+<p id="text"></p>
+
+<!--_________________________________________________________________________ LETZ FETZ Tooltip -->
+<div style="text-align: center;">
+    <div class="tooltip" id="tooltip"><h1>LETZ FETZ</h1>
+        <span class="tooltiptext" id="tooltiptext">sagt der Frosch und springt in den Mixer</span>
+    </div>
+</div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
